@@ -1,0 +1,58 @@
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-flow: dense; /* Автоматическое заполнение сетки */
+}
+
+.projectItem {
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.projectItem:hover {
+  background-color: #fff;
+}
+
+.projectItem img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.projectItem:hover img {
+  filter: grayscale(0%);
+}
+
+.projectItem:hover .projectTitle {
+  opacity: 1;
+}
+
+.projectTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+
+  background-color: rgba(255, 255, 255, 0.466); /* Light white background */
+  backdrop-filter: blur(50%); /* Blurred background */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.466) 20%,
+    rgba(255, 255, 255, 0.466) 80%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* Медиа-запрос для мобильной версии */
+@media (max-width: 767px) {
+  .projectsList {
+    grid-template-columns: 1fr; /* Одна колонка в мобильной версии */
+  }
+}
