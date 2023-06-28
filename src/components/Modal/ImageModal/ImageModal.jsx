@@ -79,3 +79,61 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
 };
 
 export default ImageModal;
+
+// alt//
+
+// import React, { useState } from "react";
+// import { IoClose } from "react-icons/io5";
+// import { TbFileDescription } from "react-icons/tb";
+// import {
+//   MdOutlineArrowForwardIos,
+//   MdOutlineArrowBackIos,
+// } from "react-icons/md";
+// import s from "./ImageModal.module.css";
+
+// const ImageModal = ({ imageUrl, onClose, onDescriptionOpen }) => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+
+//   const prevImage = () => {
+//     setActiveIndex((prevIndex) =>
+//       prevIndex === 0 ? imageUrl.length - 1 : prevIndex - 1
+//     );
+//   };
+
+//   const nextImage = () => {
+//     setActiveIndex((prevIndex) =>
+//       prevIndex === imageUrl.length - 1 ? 0 : prevIndex + 1
+//     );
+//   };
+
+//   return (
+//     <div className={s.overlay}>
+//       <div className={s.modal}>
+//         <div className={s.content}>
+//           <div className={s.button_wrapper}>
+//             <TbFileDescription
+//               className={s.description_Button}
+//               onClick={onDescriptionOpen}
+//             />
+//             <IoClose className={s.closeButton} onClick={onClose} />
+//           </div>
+
+//           <div className={s.arrow_wrapper}>
+//             <MdOutlineArrowBackIos
+//               className={s.carouselButton}
+//               onClick={prevImage}
+//             />
+//             <img src={imageUrl} alt="Project" className={s.image} />
+//             <MdOutlineArrowForwardIos
+//               className={s.carouselButton}
+//               onClick={nextImage}
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ImageModal;
+//////////////////////
