@@ -12,6 +12,9 @@ import {
 } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { TfiGallery } from "react-icons/tfi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -124,13 +127,15 @@ const ProjectPage = () => {
         <div className={s.content_wrapper}>
           <div className={s.projectImages}>
             {project.images.map((imageSrc, index) => (
-              <img
+              <LazyLoadImage
                 key={index}
                 src={process.env.PUBLIC_URL + imageSrc}
                 alt={project.title}
                 onClick={() =>
                   openImageModal(process.env.PUBLIC_URL + imageSrc)
                 }
+                // height={700} // задайте нужную высоту
+                // effect="blur" // задайте нужный эффект загрузки
               />
             ))}
           </div>

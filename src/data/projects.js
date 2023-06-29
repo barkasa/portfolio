@@ -14,7 +14,7 @@ const projects = [
     image: "/images/Project_1/project_1_list.jpg",
     images: [
       "/images/Project_1/project_0_item.jpg",
-      "/images/Project_1/project_1_item.jpg",
+      "/images/Project_1/project_1_list.jpg",
       "/images/Project_1/project_2_item.jpg",
       "/images/Project_1/project_3_item.jpg",
       "/images/Project_1/project_4_item.jpg",
@@ -46,7 +46,7 @@ const projects = [
       "/images/Project_2/project_3_item.jpg",
       "/images/Project_2/project_4_item.jpg",
       "/images/Project_2/project_5_item.jpg",
-      "/images/Project_2/project_6_item.jpg",
+      "/images/Project_2/project_2_list.jpg",
       "/images/Project_2/project_7_item.jpg",
       "/images/Project_2/project_8_item.jpg",
     ],
@@ -67,7 +67,7 @@ const projects = [
     Year: "Year: 2021",
     image: "/images/Project_3/project_3_list.jpg",
     images: [
-      "/images/Project_3/project_0_item.jpg",
+      "/images/Project_3/project_3_list.jpg",
       "/images/Project_3/project_1_item.jpg",
       "/images/Project_3/project_2_item.jpg",
       "/images/Project_3/project_3_item.jpg",
@@ -101,7 +101,7 @@ const projects = [
     image: "/images/Project_4/project_4_list.jpg",
     images: [
       "/images/Project_4/project_0_item.jpg",
-      "/images/Project_4/project_1_item.jpg",
+      "/images/Project_4/project_4_list.jpg",
       "/images/Project_4/project_2_item.jpg",
       "/images/Project_4/project_3_item.jpg",
       "/images/Project_4/project_4_item.jpg",
@@ -129,7 +129,7 @@ const projects = [
     Year: "Year: 2021",
     image: "/images/Project_5/project_5_list.jpg",
     images: [
-      "/images/Project_5/project_0_item.jpg",
+      "/images/Project_5/project_5_list.jpg",
       "/images/Project_5/project_1_item.jpg",
       "/images/Project_5/project_2_item.jpg",
       "/images/Project_5/project_3_item.jpg",
