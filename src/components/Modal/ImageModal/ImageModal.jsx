@@ -10,13 +10,16 @@ import s from "./ImageModal.module.css";
 import projects from "../../../data/projects";
 
 const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
-  const { projectId } = useParams();
+  const { projectId, imageIndex } = useParams();
   const project = projects.find((p) => p.id === parseInt(projectId));
   const images = project ? project.images : [];
 
   const [activeIndex, setActiveIndex] = useState(
-    images.findIndex((image) => image === imageUrl)
+    imageIndex
+      ? parseInt(imageIndex)
+      : images.findIndex((img) => img === imageUrl) || 0
   );
+  // eslint-disable-next-line no-unused-vars
   const [imageWidth, setImageWidth] = useState(0);
   const imageRef = useRef(null);
 
@@ -27,18 +30,34 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
   }, [activeIndex]);
 
   const prevImage = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-    console.log("Previous Image");
+    const newIndex = activeIndex === 0 ? images.length - 1 : activeIndex - 1;
+    updateUrl(newIndex);
+    setActiveIndex(newIndex);
   };
 
   const nextImage = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-    console.log("Next Image");
+    const newIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
+    updateUrl(newIndex);
+    setActiveIndex(newIndex);
   };
+
+  const updateUrl = (index) => {
+    const pathname = window.location.pathname.replace(
+      `/${imageIndex}`,
+      `/${index}`
+    );
+    window.history.replaceState({}, "", pathname);
+  };
+
+  const getImageUrl = (url) => {
+    if (url && url.startsWith("/portfolio")) {
+      return url;
+    } else {
+      return url ? `/portfolio${url}` : null;
+    }
+  };
+
+  const currentImageUrl = getImageUrl(images[activeIndex]) || imageUrl;
 
   return (
     <div className={s.overlay}>
@@ -61,11 +80,12 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
               {images.length > 0 && (
                 <img
                   ref={imageRef}
-                  src={images[activeIndex]}
-                  alt="Project"
+                  src={currentImageUrl}
+                  alt={` ${activeIndex + 1}`}
                   className={s.image}
                 />
               )}
+
               <MdOutlineArrowForwardIos
                 className={`${s.carouselButton} ${s.right}`}
                 onClick={nextImage}
@@ -79,61 +99,3 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
 };
 
 export default ImageModal;
-
-// alt//
-
-// import React, { useState } from "react";
-// import { IoClose } from "react-icons/io5";
-// import { TbFileDescription } from "react-icons/tb";
-// import {
-//   MdOutlineArrowForwardIos,
-//   MdOutlineArrowBackIos,
-// } from "react-icons/md";
-// import s from "./ImageModal.module.css";
-
-// const ImageModal = ({ imageUrl, onClose, onDescriptionOpen }) => {
-//   const [activeIndex, setActiveIndex] = useState(0);
-
-//   const prevImage = () => {
-//     setActiveIndex((prevIndex) =>
-//       prevIndex === 0 ? imageUrl.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   const nextImage = () => {
-//     setActiveIndex((prevIndex) =>
-//       prevIndex === imageUrl.length - 1 ? 0 : prevIndex + 1
-//     );
-//   };
-
-//   return (
-//     <div className={s.overlay}>
-//       <div className={s.modal}>
-//         <div className={s.content}>
-//           <div className={s.button_wrapper}>
-//             <TbFileDescription
-//               className={s.description_Button}
-//               onClick={onDescriptionOpen}
-//             />
-//             <IoClose className={s.closeButton} onClick={onClose} />
-//           </div>
-
-//           <div className={s.arrow_wrapper}>
-//             <MdOutlineArrowBackIos
-//               className={s.carouselButton}
-//               onClick={prevImage}
-//             />
-//             <img src={imageUrl} alt="Project" className={s.image} />
-//             <MdOutlineArrowForwardIos
-//               className={s.carouselButton}
-//               onClick={nextImage}
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ImageModal;
-//////////////////////
