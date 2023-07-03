@@ -56,7 +56,7 @@ const ContactsPage = () => {
           alignItems: "center",
         }}
       >
-        <p style={{ color: "red" }}>
+        <p style={{ color: "red", textAlign: "center" }}>
           WARNING!!! emailing through the Contact form is temporarily not
           working.
         </p>

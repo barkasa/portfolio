@@ -1,5 +1,6 @@
 import React from "react";
-import { FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTelegramPlane, FaGithub } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import s from "./Footer.module.css";
 
@@ -22,8 +23,13 @@ const Footer = () => {
           .
         </p>
         <div className={s.social_icons}>
-          <a href="https://www.whatsapp.com" className={s.icon_link}>
-            <FaWhatsapp className={s.icon} />
+          <a
+            href="https://api.whatsapp.com/send?phone=4915752647752"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.icon_link}
+          >
+            <IoLogoWhatsapp className={s.icon} />
           </a>
           <a
             href="https://www.linkedin.com/in/ivan-morozov-840440a3/"
@@ -31,8 +37,16 @@ const Footer = () => {
           >
             <FaLinkedin className={s.icon} />
           </a>
-          <a href="https://www.instagram.com" className={s.icon_link}>
-            <FaInstagram className={s.icon} />
+          <a
+            href="https://telegram.me/barkasa15"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.icon_link}
+          >
+            <FaTelegramPlane className={s.icon} />
+          </a>
+          <a href="https://github.com/barkasa" className={s.icon_link}>
+            <FaGithub className={s.icon} />
           </a>
         </div>
       </div>

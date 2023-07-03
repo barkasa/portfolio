@@ -9,6 +9,8 @@ import ProjectsList from "./components/ProjectsList/ProjectsList";
 import ProjectPage from "./pages/ProjectPage/ProjectPage"; // Исправленный путь импорта
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import ArtsPages from "./pages/ArtsPage/ArtsPages";
+import ItProjects from "./pages/ItProjectsPaje/ItProjects";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -84,8 +86,10 @@ function App() {
       </div>
       <Routes>
         <Route path="" element={<HomePage />} />
-        <Route exact path="/" element={<ProjectsList />} />{" "}
-        <Route path="/project/:projectId" element={<ProjectPage />} />{" "}
+        <Route exact path="/" element={<ProjectsList />} />
+        <Route path="/project/:projectId" element={<ProjectPage />} />
+        <Route path="/itProjects" element={<ItProjects />} />
+        <Route path="/arts" element={<ArtsPages />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<NotFoundPage />} />
