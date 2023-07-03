@@ -82,9 +82,6 @@ export default function AboutPage() {
       </div>
       <div className={s.download_wrapper}>
         <button className={s.download_button}>
-          {/* <a href="/Lebenslauf.pdf" download>
-            Download CV
-          </a> */}
           <a
             href="https://drive.google.com/file/d/1e_iiID-tmaBO9AYXQWU_Vs9a9JX0rvJJ/view?usp=sharing"
             download
@@ -93,9 +90,6 @@ export default function AboutPage() {
           </a>
         </button>
         <button className={s.download_button}>
-          {/* <a href="/Bewerbung.pdf" download>
-            Download Appl.
-          </a> */}
           <a
             href="https://drive.google.com/file/d/1lm5olwiR9b4dMRKHL1nONmiLEsa0gkyY/view?usp=sharing"
             download
