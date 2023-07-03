@@ -25,7 +25,10 @@ const Footer = () => {
           <a href="https://www.whatsapp.com" className={s.icon_link}>
             <FaWhatsapp className={s.icon} />
           </a>
-          <a href="https://www.linkedin.com" className={s.icon_link}>
+          <a
+            href="https://www.linkedin.com/in/ivan-morozov-840440a3/"
+            className={s.icon_link}
+          >
             <FaLinkedin className={s.icon} />
           </a>
           <a href="https://www.instagram.com" className={s.icon_link}>
