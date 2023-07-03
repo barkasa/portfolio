@@ -86,7 +86,7 @@ export default function AboutPage() {
             Download CV
           </a> */}
           <a
-            href="https://github.com/barkasa/portfolio/blob/main/public/Lebenslauf.pdf"
+            href="https://drive.google.com/file/d/1e_iiID-tmaBO9AYXQWU_Vs9a9JX0rvJJ/view?usp=sharing"
             download
           >
             Download CV
@@ -97,7 +97,7 @@ export default function AboutPage() {
             Download Appl.
           </a> */}
           <a
-            href="https://github.com/barkasa/portfolio/blob/main/public/Bewerbung.pdf"
+            href="https://drive.google.com/file/d/1lm5olwiR9b4dMRKHL1nONmiLEsa0gkyY/view?usp=sharing"
             download
           >
             Download Appl.
