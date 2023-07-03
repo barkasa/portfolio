@@ -2,7 +2,7 @@ import { Route, Routes, Outlet, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import NotFoundPage from "./pages/NotFoundPages/NotFoundPage";
 import HomePage from "./pages/HomePage/HomePage";
 import ProjectsList from "./components/ProjectsList/ProjectsList";
@@ -77,10 +77,11 @@ function App() {
   };
 
   return (
-    <div className="wrapper_app">
-      <Header />
-      <ScrollToTop />
-
+    <div>
+      <div className="wrapper_app">
+        <Header />
+        <ScrollToTop />
+      </div>
       <Routes>
         <Route path="" element={<HomePage />} />
         <Route exact path="/" element={<ProjectsList />} />{" "}
@@ -89,8 +90,10 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <Outlet />
-      <Footer />
+      <div className="wrapper_app">
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 }
