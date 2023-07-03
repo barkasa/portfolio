@@ -25,6 +25,10 @@
 }
 .scroll_doun {
   margin-top: 50px;
+  cursor: pointer;
+}
+.scroll_doun:hover {
+  color: rgb(84, 84, 104);
 }
 .block_about {
   padding: 55px 0;

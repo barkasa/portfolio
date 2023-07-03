@@ -4,7 +4,6 @@ import { FaArrowCircleDown } from "react-icons/fa";
 import avatar from "../../assets/avatar.jpg";
 import gostinaya from "../../assets/gostinaya.png";
 
-
 export default function AboutPage() {
   const nextSectionRef = useRef(null);
 
@@ -83,13 +82,24 @@ export default function AboutPage() {
       </div>
       <div className={s.download_wrapper}>
         <button className={s.download_button}>
-          
-          <a href="/Lebenslauf.pdf" download>
+          {/* <a href="/Lebenslauf.pdf" download>
+            Download CV
+          </a> */}
+          <a
+            href="https://github.com/barkasa/portfolio/blob/main/public/Lebenslauf.pdf"
+            download
+          >
             Download CV
           </a>
         </button>
         <button className={s.download_button}>
-          <a href="/Bewerbung.pdf" download>
+          {/* <a href="/Bewerbung.pdf" download>
+            Download Appl.
+          </a> */}
+          <a
+            href="https://github.com/barkasa/portfolio/blob/main/public/Bewerbung.pdf"
+            download
+          >
             Download Appl.
           </a>
         </button>
