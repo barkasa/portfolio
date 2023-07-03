@@ -48,61 +48,75 @@ const ContactsPage = () => {
   };
 
   return (
-    <div className={s.container}>
-      {isSent ? (
-        <div className={s.success_container}>
-          <img src={successImage} alt="Success" className={s.success_image} />
-          <button className={s.back_button} onClick={handleGoBack}>
-            Go back to Gallery
-          </button>
-        </div>
-      ) : (
-        <form className={s.form} onSubmit={handleSubmit}>
-          <div className={s.form_container}>
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={handleNameChange}
-              required
-              pattern="[A-Za-zА-Яа-яЁё\s]+"
-              className={s.form_input}
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              value={email}
-              onChange={handleEmailChange}
-              required
-              className={s.form_input}
-            />
-            <input
-              type="text"
-              placeholder="Your Subject"
-              value={subject}
-              onChange={handleSubjectChange}
-              required
-              pattern="[A-Za-zА-Яа-яЁё\s]+"
-              className={s.form_input}
-            />
-            <textarea
-              placeholder="Your Message"
-              value={message}
-              onChange={handleMessageChange}
-              required
-              className={s.form_textarea}
-              style={{ resize: "vertical" }}
-            />
-            <button
-              type="submit"
-              className={s.form_button}
-              disabled={isSending}
-            >
-              {isSending ? "Sending..." : "SEND MESSAGE"}
+    <div className={s.wrapper_app}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <p style={{ color: "red" }}>
+          WARNING!!! emailing through the Contact form is temporarily not
+          working.
+        </p>
+      </div>
+      <div className={s.container}>
+        {isSent ? (
+          <div className={s.success_container}>
+            <img src={successImage} alt="Success" className={s.success_image} />
+            <button className={s.back_button} onClick={handleGoBack}>
+              Go back to Gallery
             </button>
           </div>
-        </form>
-      )}
+        ) : (
+          <form className={s.form} onSubmit={handleSubmit}>
+            <div className={s.form_container}>
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={handleNameChange}
+                required
+                pattern="[A-Za-zА-Яа-яЁё\s]+"
+                className={s.form_input}
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={handleEmailChange}
+                required
+                className={s.form_input}
+              />
+              <input
+                type="text"
+                placeholder="Your Subject"
+                value={subject}
+                onChange={handleSubjectChange}
+                required
+                pattern="[A-Za-zА-Яа-яЁё\s]+"
+                className={s.form_input}
+              />
+              <textarea
+                placeholder="Your Message"
+                value={message}
+                onChange={handleMessageChange}
+                required
+                className={s.form_textarea}
+                style={{ resize: "vertical" }}
+              />
+              <button
+                type="submit"
+                className={s.form_button}
+                disabled={isSending}
+              >
+                {isSending ? "Sending..." : "SEND MESSAGE"}
+              </button>
+            </div>
+          </form>
+        )}
+      </div>
     </div>
   );
 };
