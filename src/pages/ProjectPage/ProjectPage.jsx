@@ -100,7 +100,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div>
+    <div className={s.wrapper_app}>
       <div className={s.navigation_buttons}>
         <div className={s.nav_left_buttons}>
           <div onClick={goToPreviousProject} title="Previous Project">

@@ -209,6 +209,38 @@ const projects = [
 
     categoryId: 7,
   },
+  {
+    id: 8,
+    title: "Design and implementation of a flat, Moscow, 2013",
+    title_item: "Design and implementation of a flat -  V.D.",
+    description: `Introducing you to one of my favourite jobs as part of IND architects. This project was special and required a special approach, as the client had his own unique preferences. In the end the project was successfully implemented, despite not being a complete match to the design, the project turned out great. One of the special features of this project were the paintings that were specially commissioned by the well-known artist Oleg Morozov.
+
+    The flat is located in the centre of Moscow and has a spacious view from the window. It has achieved elegance of style, where gold elements, some luxury and cosiness are perfectly combined. This flat is designed for a young and attractive couple who appreciate beauty and unique design.
+    
+    The whole project reflects a dedication to quality and detail, and is a great example of working together. I am proud of this project and hope it will be a source of inspiration for future works.`,
+    Location: "Location: Moscow,  V.D.",
+    Area: "Area: 178,35qm",
+    Year: "Year: 2013",
+    image: "/images/Project_8/project_8_list.jpg",
+    images: [
+      "/images/Project_8/project_8_list.jpg",
+      "/images/Project_8/project_2_item.jpg",
+      "/images/Project_8/project_3_item.jpg",
+      "/images/Project_8/project_4_item.jpg",
+      "/images/Project_8/project_5_item.jpg",
+      "/images/Project_8/project_6_item.jpg",
+      "/images/Project_8/project_7_item.jpg",
+      "/images/Project_8/project_8_item.jpg",
+      "/images/Project_8/project_9_item.jpg",
+      "/images/Project_8/project_10_item.jpg",
+      "/images/Project_8/project_11_item.jpg",
+      "/images/Project_8/project_12_item.jpg",
+      "/images/Project_8/project_13_item.jpg",
+      "/images/Project_8/project_14_item.jpg",
+    ],
+
+    categoryId: 8,
+  },
 ];
 
 export default projects;

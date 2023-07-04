@@ -165,7 +165,7 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
   const currentImageUrl = getImageUrl(images[activeIndex]) || imageUrl;
 
   return (
-    <div className={s.overlay}>
+    <div className={`${s.overlay} ${s.wrapper_app}`}>
       <div className={s.modal}>
         <div className={s.content}>
           <div className={s.button_wrapper}>
