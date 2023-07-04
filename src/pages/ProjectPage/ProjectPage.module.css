@@ -1,3 +1,9 @@
+.wrapper_app {
+  margin: 0 auto;
+  max-width: 1450px;
+  padding: 0 20px;
+}
+
 .projectPage {
   margin-top: 50px;
   display: flex;
