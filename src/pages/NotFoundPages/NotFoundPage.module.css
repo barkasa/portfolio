@@ -31,3 +31,21 @@
 .back_button:hover {
   background-color: #808080;
 }
+
+@media (max-width: 1200px) {
+  .image_wrapper {
+    position: static;
+  }
+  .back_button {
+    margin: 0 auto;
+    position: static;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+  .image_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
