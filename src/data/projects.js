@@ -241,6 +241,67 @@ const projects = [
 
     categoryId: 8,
   },
+  {
+    id: 9,
+    title: "Restaurant and café design, Sochi, 2012",
+    title_item: "Restaurant and café design",
+    description:
+      "One of my favourite projects, which unfortunately did not come to fruition due to a lack of will or desire on the part of the client.\n" +
+      "\n" +
+      "This project is a restaurant and cafe, in the city of Sochi, located on three levels in a shopping centre. The ground floor and the terrace are intended as a cafe and the first floor has 2 levels for the restaurant.\n" +
+      "\n" +
+      "Particular attention has been paid to the position of the kitchen, which is behind glass in the centre, in the back. Blue tiles with Asian ornaments in the kitchen are a striking colour accent. This space becomes the main place where magic is made. All guests are accessible and visible. The restaurant has an open, curved balcony where tables are placed for diners.\n" +
+      "\n" +
+      "The warm ochre colours of the furniture, the decoration, the ornaments and the lighting create a cosy and warm atmosphere of Asian cosiness. Every detail in the interior is carefully designed to create a unique atmosphere and satisfy the taste of each guest.\n" +
+      "\n" +
+      "It is a shame that this project was not fully realised, but I hope it can serve as inspiration for future projects and an insight into what a beautiful space can be created for the restaurant business.\n",
+    Location: "Location: Sochi",
+    Area: "Area: 3 floors + terrace\n",
+    Year: "Year: 2012",
+    image: "/images/Project_9/project_9_list.jpg",
+    images: [
+      "/images/Project_9/project_1_item.jpg",
+      "/images/Project_9/project_9_list.jpg",
+      "/images/Project_9/project_3_item.jpg",
+      "/images/Project_9/project_4_item.jpg",
+      "/images/Project_9/project_5_item.jpg",
+      "/images/Project_9/project_6_item.jpg",
+      "/images/Project_9/project_7_item.jpg",
+      "/images/Project_9/project_8_item.jpg",
+      "/images/Project_9/project_9_item.jpg",
+    ],
+
+    categoryId: 9,
+  },
+  {
+    id: 10,
+    title: "Restaurant design, Almaty, Kazakhstan, 2011",
+    title_item: "Restaurant design",
+    description: `Also one of my interesting projects is a restaurant and banqueting hall full of decor and oriental luxury. 
+
+      The restaurant, on level 2, is a modern, futuristic space where modern lines and materials are combined with elements of oriental culture. The use of LED lighting, textured surfaces and flexible forms creates a feeling of the future and a magical atmosphere.
+      
+      The second room, on the 3rd level, is a banqueting hall, designed for weddings and celebrations. It is distinguished by a sumptuous and ornate decoration, where oriental patterns, golden hues and an abundance of precious materials create an atmosphere of splendour and opulence. Every detail, from embroidered textiles to crystal chandeliers, contributes to the ambience of an oriental palace.
+      
+      Even the corridors and lifts in the restaurant are filled with decorative elements and oriental patterns on the walls. They bring visitors the feeling that they have entered an oriental fairy tale, where every step reminds them of the wealth and luxury of the ancient East.
+      
+      It was a fascinating job where our imagination and creative will prevailed, allowing us to create a space that transports guests into a world of oriental exoticism and luxury.`,
+    Area: "Area: 2 floors",
+    Year: "Year: 2011",
+    image: "/images/Project_10/project_10_list.jpg",
+    images: [
+      "/images/Project_10/project_10_list.jpg",
+      "/images/Project_10/project_2_item.jpg",
+      "/images/Project_10/project_3_item.jpg",
+      "/images/Project_10/project_4_item.jpg",
+      "/images/Project_10/project_5_item.jpg",
+      "/images/Project_10/project_6_item.jpg",
+
+      "/images/Project_10/project_7_item.jpg",
+    ],
+
+    categoryId: 10,
+  },
 ];
 
 export default projects;

@@ -32,8 +32,6 @@ export default function ProjectsList({ projects }) {
               src={process.env.PUBLIC_URL + project.image}
               alt={project.title}
               className={s.projectImage}
-              // height={200} // задайте нужную высоту
-              // effect="blur" // задайте нужный эффект загрузки
             />
           </Link>
           <h3 className={s.projectTitle}>{project.title}</h3>
