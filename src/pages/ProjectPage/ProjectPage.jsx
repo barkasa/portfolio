@@ -107,7 +107,7 @@ const ProjectPage = () => {
             <MdSkipPrevious />
           </div>
           <div title="Gallery">
-            <NavLink className={s.nav_link} to="/">
+            <NavLink className={s.nav_link} to="/portfolio">
               <TfiGallery className={s.back_to_Gallery} />
             </NavLink>
           </div>
@@ -134,8 +134,6 @@ const ProjectPage = () => {
                 onClick={() =>
                   openImageModal(process.env.PUBLIC_URL + imageSrc)
                 }
-                // height={700} // задайте нужную высоту
-                // effect="blur" // задайте нужный эффект загрузки
               />
             ))}
           </div>
@@ -171,7 +169,7 @@ const ProjectPage = () => {
             <MdSkipPrevious />
           </div>
           <div title="Gallery">
-            <NavLink className={s.nav_link} to="/">
+            <NavLink className={s.nav_link} to="/portfolio">
               <TfiGallery className={s.back_to_Gallery} />
             </NavLink>
           </div>
