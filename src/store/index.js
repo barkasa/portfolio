@@ -1,7 +1,7 @@
-// src/store/index.js
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
-import projectsReducer from "./reducers/projectsReducer"; // Импортируйте projectsReducer
+import projectsReducer from "./reducers/projectsReducer";
+// import projectsReducer from "./reducers/projectsReducer";
 
 const rootReducer = combineReducers({
   projects: projectsReducer,

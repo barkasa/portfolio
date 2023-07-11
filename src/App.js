@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import React, { useState, useEffect } from "react";
 import NotFoundPage from "./pages/NotFoundPages/NotFoundPage";
 import HomePage from "./pages/HomePage/HomePage";
-import ProjectsList from "./components/ProjectsList/ProjectsList";
+// import ProjectsList from "./components/ProjectsList/ProjectsList";
 import ProjectPage from "./pages/ProjectPage/ProjectPage"; // Исправленный путь импорта
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
@@ -85,8 +85,8 @@ function App() {
         <ScrollToTop />
       </div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route exact path="/" element={<ProjectsList />} />
+        <Route path="/portfolio" element={<HomePage />} />
+        {/* <Route exact path="/" element={<ProjectsList />} /> */}
         <Route path="/project/:projectId" element={<ProjectPage />} />
         <Route path="/itProjects" element={<ItProjects />} />
         <Route path="/arts" element={<ArtsPages />} />

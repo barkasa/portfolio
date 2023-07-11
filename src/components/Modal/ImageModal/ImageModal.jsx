@@ -17,11 +17,19 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
   const project = projects.find((p) => p.id === parseInt(projectId));
   const images = project ? project.images : [];
 
-  const [activeIndex, setActiveIndex] = useState(
-    imageIndex
-      ? parseInt(imageIndex)
-      : images.findIndex((img) => img === imageUrl) || 0
-  );
+  // const [activeIndex, setActiveIndex] = useState(
+  //   imageIndex || images.findIndex((img) => img === imageUrl) || 0
+  // );
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const initialIndex = images.findIndex((img) => img === imageUrl);
+    if (initialIndex !== -1) {
+      setActiveIndex(initialIndex);
+    }
+  }, [imageUrl, images]);
+
   // eslint-disable-next-line no-unused-vars
   const [imageWidth, setImageWidth] = useState(0);
   const imageRef = useRef(null);
@@ -33,13 +41,18 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
   }, [activeIndex]);
 
   const prevImage = () => {
-    const newIndex = activeIndex === 0 ? images.length - 1 : activeIndex - 1;
+    const newIndex = activeIndex <= 0 ? images.length - 1 : activeIndex - 1;
     updateUrl(newIndex);
     setActiveIndex(newIndex);
   };
 
   const nextImage = () => {
-    const newIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
+    let newIndex;
+    if (activeIndex === images.length - 1) {
+      newIndex = 0;
+    } else {
+      newIndex = activeIndex + 1;
+    }
     updateUrl(newIndex);
     setActiveIndex(newIndex);
   };
