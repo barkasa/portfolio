@@ -9,19 +9,18 @@ import { useParams } from "react-router-dom";
 import s from "./ImageModal.module.css";
 import projects from "../../../data/projects";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import "react-lazy-load-image-component/src/effects/blur.css";
+import arts from "../../../data/arts";
 
-const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
-  const { projectId, imageIndex } = useParams();
+const ImageModal = ({ onClose, onDescriptionOpen, imageUrl, index }) => {
+  const { projectId, artId, imageIndex } = useParams();
   const project = projects.find((p) => p.id === parseInt(projectId));
-  const images = project ? project.images : [];
+  const art = arts.find((p) => p.id === parseInt(artId));
+  const images = (project ? project.images : []).concat(art ? art.images : []);
 
-  // const [activeIndex, setActiveIndex] = useState(
-  //   imageIndex || images.findIndex((img) => img === imageUrl) || 0
-  // );
-
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(
+    imageIndex || images.findIndex((img) => img === imageUrl) || 0
+  );
 
   useEffect(() => {
     const initialIndex = images.findIndex((img) => img === imageUrl);
@@ -30,7 +29,6 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
     }
   }, [imageUrl, images]);
 
-  // eslint-disable-next-line no-unused-vars
   const [imageWidth, setImageWidth] = useState(0);
   const imageRef = useRef(null);
 
@@ -93,7 +91,7 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl }) => {
                 onClick={prevImage}
               />
 
-              {images.length > 0 && (
+              {images && images.length > 0 && (
                 <LazyLoadImage
                   ref={imageRef}
                   src={currentImageUrl}
