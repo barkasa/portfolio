@@ -27,7 +27,7 @@ const arts = [
     ),
     Year: "Year: 2013-2018",
 
-    image: "/images/Arts_3ddd/sphinx.jpg",
+    image: "/images/Arts_3ddd/Straftäter.jpg",
     images: [
       "/images/Arts_3ddd/alter_Spiegel.jpg",
       "/images/Arts_3ddd/Antiquität.jpg",
