@@ -54,6 +54,7 @@
 .download_wrapper {
   padding: 100px 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .download_button {
@@ -139,5 +140,9 @@
   }
   .content_wrapper_down p {
     text-align: center;
+  }
+
+  .download_button {
+    margin: 10px;
   }
 }

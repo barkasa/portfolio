@@ -83,10 +83,19 @@ export default function AboutPage() {
       <div className={s.download_wrapper}>
         <button className={s.download_button}>
           <a
-            href="https://drive.google.com/file/d/1e_iiID-tmaBO9AYXQWU_Vs9a9JX0rvJJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hlw--bmrMRbtB2budgqQsg4LzEupUBq9/view?usp=sharing"
             download
           >
-            Download CV
+            Lebenslauf
+          </a>
+        </button>
+
+        <button className={s.download_button}>
+          <a
+            href="https://drive.google.com/file/d/14T9tgnJJOGZFmI4hLWRyK9AUDck8HM8V/view?usp=sharing"
+            download
+          >
+            Bewerbung
           </a>
         </button>
         <button className={s.download_button}>
@@ -98,12 +107,7 @@ export default function AboutPage() {
           </a>
         </button>
         <button className={s.download_button}>
-          <a
-            href="https://drive.google.com/file/d/1IImGrcyDxMbIM8WaNJIPHFSzbz4eEmoU/view?usp=sharing"
-            download
-          >
-            Download Appl.
-          </a>
+          <a href="https://3ddd.ru/users/morosow/models">View 3ddd models</a>
         </button>
       </div>
       <div className={`${s.banner} ${s.banner_down}`}>

@@ -36,3 +36,17 @@
 .icon {
   font-size: 25px;
 }
+.icon_img {
+  width: 25px;
+  height: 25px;
+  transition: color 0.3s ease;
+}
+.icon_img:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .icon_link {
+    margin: 0 10px;
+  }
+}

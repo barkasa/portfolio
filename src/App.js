@@ -9,8 +9,11 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage"; // Исправленный путь импорта
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
-import ArtsPages from "./pages/ArtsPage/ArtsPages";
+
 import ItProjects from "./pages/ItProjectsPaje/ItProjects";
+
+import ArtsPages from "./pages/ArtsPages/ArtsPages";
+import ArtItemPage from "./pages/ArtItemPage/ArtItemPage";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -90,6 +93,9 @@ function App() {
         <Route path="/project/:projectId" element={<ProjectPage />} />
         <Route path="/itProjects" element={<ItProjects />} />
         <Route path="/arts" element={<ArtsPages />} />
+        {/* <Route path="/arts/:category/:artId" element={<ArtItemPage />} /> */}
+        <Route path="/arts/:artId" element={<ArtItemPage />} />
+
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<NotFoundPage />} />

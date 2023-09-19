@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin, FaTelegramPlane, FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import ddd from "../../assets/3ddd.png";
 import s from "./Footer.module.css";
 
 const Footer = () => {
@@ -28,6 +29,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={s.icon_link}
+            title="whatsapp"
           >
             <IoLogoWhatsapp className={s.icon} />
           </a>
@@ -35,18 +37,26 @@ const Footer = () => {
             href="https://www.linkedin.com/in/ivan-morozov-840440a3/"
             className={s.icon_link}
           >
-            <FaLinkedin className={s.icon} />
+            <FaLinkedin className={s.icon} title="linkedin" />
           </a>
           <a
             href="https://telegram.me/barkasa15"
             target="_blank"
             rel="noopener noreferrer"
             className={s.icon_link}
+            title="telegram"
           >
             <FaTelegramPlane className={s.icon} />
           </a>
           <a href="https://github.com/barkasa" className={s.icon_link}>
-            <FaGithub className={s.icon} />
+            <FaGithub className={s.icon} title="github" />
+          </a>
+          <a
+            href="https://3dsky.org/users/morosow/models"
+            className={s.icon_link}
+            title="3dsky.org"
+          >
+            <img className={s.icon_img} src={ddd} alt="logo_3ddd" />
           </a>
         </div>
       </div>
