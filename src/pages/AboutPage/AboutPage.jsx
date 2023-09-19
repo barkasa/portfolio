@@ -83,7 +83,7 @@ export default function AboutPage() {
       <div className={s.download_wrapper}>
         <button className={s.download_button}>
           <a
-            href="https://drive.google.com/file/d/1hlw--bmrMRbtB2budgqQsg4LzEupUBq9/view?usp=sharing"
+            href="https://drive.google.com/file/d/13mD-71BJkN4KVFm1gaZSD9sz1FPupgjH/view?usp=sharing"
             download
           >
             Lebenslauf
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
         <button className={s.download_button}>
           <a
-            href="https://drive.google.com/file/d/14T9tgnJJOGZFmI4hLWRyK9AUDck8HM8V/view?usp=sharing"
+            href="https://drive.google.com/file/d/1MkH9vqNDxN_VDVw-Lgsgfc6tPQ0suozw/view?usp=sharing"
             download
           >
             Bewerbung
