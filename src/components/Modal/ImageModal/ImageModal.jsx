@@ -29,6 +29,7 @@ const ImageModal = ({ onClose, onDescriptionOpen, imageUrl, index }) => {
     }
   }, [imageUrl, images]);
 
+  // eslint-disable-next-line
   const [imageWidth, setImageWidth] = useState(0);
   const imageRef = useRef(null);
 
