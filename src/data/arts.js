@@ -86,6 +86,8 @@ const arts = [
       "/images/Arts_Blender/island.jpg",
       "/images/Arts_Blender/boat.jpg",
       "/images/Arts_Blender/mayak.jpg",
+      "/images/Arts_Blender/mashrooms.jpg",
+      "/images/Arts_Blender/treasure_island.jpg",
     ],
     categoryId: 2,
   },
