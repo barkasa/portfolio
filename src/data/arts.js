@@ -77,12 +77,13 @@ const arts = [
     id: 2,
     title: "Blender Arts",
     title_item: "Blender Arts",
-    description: "Blender Arts",
+    description: "Blender Arts, YouTube-Tutorials",
     Year: "Year: 2023",
 
     image: "/images/Arts_Blender/grib.jpg",
     images: [
       "/images/Arts_Blender/grib.jpg",
+      "/images/Arts_Blender/ezgif.com-optimize.gif",
       "/images/Arts_Blender/island.jpg",
       "/images/Arts_Blender/boat.jpg",
       "/images/Arts_Blender/mayak.jpg",
