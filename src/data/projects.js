@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    title: "Butvinova A. Moscow 2023",
+    title: "B. A. Moscow 2023",
     title_item: "Design Project - Butvinova A.",
     description:
       "Elegant interior in a modern classic style. It is a joint work with the architect of the project, on the design and visualization of the interiors, selection of furniture and finishing materials.\n" +
@@ -298,6 +298,26 @@ const projects = [
       "/images/Project_10/project_6_item.jpg",
 
       "/images/Project_10/project_7_item.jpg",
+    ],
+
+    categoryId: 10,
+  },
+  {
+    id: 11,
+    title: "Flat de S. Moscow 2023",
+    title_item: "Flat design",
+    description: `A small apartment for rent. So the task was to make it stylish, tasteful and not very expensive. In my opinion, the architect and I found the golden mean.`,
+    Area: "Area: 46,06qm",
+    Year: "Year: 2023",
+    image: "/images/Project_11/project_11_list.jpg",
+    images: [
+      "/images/Project_11/project_11_1.jpg",
+      "/images/Project_11/project_11_2.jpg",
+      "/images/Project_11/project_11_3.jpg",
+      "/images/Project_11/project_11_4.jpg",
+      "/images/Project_11/project_11_5.jpg",
+      "/images/Project_11/project_11_6.jpg",
+      "/images/Project_11/project_11_7.jpg",
     ],
 
     categoryId: 10,
