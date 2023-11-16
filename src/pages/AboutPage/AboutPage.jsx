@@ -100,7 +100,8 @@ export default function AboutPage() {
         </button>
         <button className={s.download_button}>
           <a
-            href="https://drive.google.com/file/d/18DR1zuvWpr4BmM_1Hl9s0bT66fMvSAMS/view?usp=sharing"
+            // href="https://drive.google.com/file/d/18DR1zuvWpr4BmM_1Hl9s0bT66fMvSAMS/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1JqNRWYWlqgMDIBp6RKJ1fOIZgXzJpweZ?usp=sharing"
             download
           >
             View Certificate

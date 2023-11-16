@@ -3,6 +3,7 @@ import { FaLinkedin, FaTelegramPlane, FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import ddd from "../../assets/3ddd.png";
+import artstation from "../../assets/artstation.png";
 import s from "./Footer.module.css";
 
 const Footer = () => {
@@ -57,6 +58,17 @@ const Footer = () => {
             title="3dsky.org"
           >
             <img className={s.icon_img} src={ddd} alt="logo_3ddd" />
+          </a>
+          <a
+            href="https://www.artstation.com/morozov"
+            className={s.icon_link}
+            title="www.artstation.com"
+          >
+            <img
+              className={s.icon_img}
+              src={artstation}
+              alt="logo_artstation"
+            />
           </a>
         </div>
       </div>
