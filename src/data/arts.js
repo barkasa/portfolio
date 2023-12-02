@@ -159,6 +159,7 @@ const arts = [
       "/images/Arts_Paint/1.jpg",
       "/images/Arts_Paint/2.a.jpg",
       "/images/Arts_Paint/4.jpg",
+      "/images/Arts_Paint/cats.jpg",
     ],
     categoryId: 4,
   },
