@@ -105,36 +105,21 @@ const arts = [
 
   {
     id: 3,
-    title: "Balter Arts",
-    title_item: "Balter Arts",
+    title: "3DsMAX Arts",
+    title_item: "3DsMAX Arts",
 
     description:
-      "During my time at Balter GmbH, I was actively involved in the creation of 3D models and product visualisations. My role was to develop high quality 3D models and visualisations that were used for brochures, catalogues, website and production. My work contributed to improving the visual presentation of the company's products and was an important element in its marketing and production efforts.",
+      "Training works from various lessons, which later turned into Art. An option when you go beyond the scope of this project and want more.",
 
-    Year: "Year: 2015-2020",
-    image: "/images/Arts_Balter/kartinka dom2.jpg",
+    Year: "Year: 2023-2024",
+    image: "/images/Arts_3DsMAX/snowBall_1.jpg",
     images: [
-      "/images/Arts_Balter/KP5_View 1 2.jpg",
-      "/images/Arts_Balter/KP5_View 3 2.jpg",
-      "/images/Arts_Balter/kartinka dom2.jpg",
-      "/images/Arts_Balter/kamera 2B 300dpi.jpg",
-      "/images/Arts_Balter/kamera 2W 300dpi.jpg",
-      "/images/Arts_Balter/kamera 10 v2.jpg",
-      "/images/Arts_Balter/kamera 5 n4.jpg",
-      "/images/Arts_Balter/kamera6.jpg",
-      "/images/Arts_Balter/kamera7.jpg",
-      "/images/Arts_Balter/stoika 2.jpg",
-      "/images/Arts_Balter/TS2_03.jpg",
-      "/images/Arts_Balter/View_02.jpg",
-      "/images/Arts_Balter/zapravka 8.jpg",
-      "/images/Arts_Balter/zapravka.jpg",
-      "/images/Arts_Balter/TSS.jpg",
-      "/images/Arts_Balter/TSS_2.jpg",
-      "/images/Arts_Balter/Stend 3_View 1.jpg",
+      "/images/Arts_3DsMAX/snowBall_1.jpg",
+      "/images/Arts_3DsMAX/snowBall_2.jpg",
     ],
-
     categoryId: 3,
   },
+
   {
     id: 4,
     title: "Paint Arts",
@@ -143,7 +128,7 @@ const arts = [
     description:
       "I have had a lifelong passion for drawing and have taken part in various painting competitions, which has made painting an integral part of my life. Recently I was lucky enough to try my hand at painting on large formats using acrylics, gold leaf, silver and bronze. This experience opened up new horizons for me and allowed me to create works of art that I proudly gifted to my friends. My paintings now adorn their homes and I feel a special satisfaction knowing that my creative endeavours bring joy and inspiration to those around me.",
 
-    Year: "Year: 2021-2022",
+    Year: "Year: 2021-2023",
     image: "/images/Arts_Paint/3.jpg",
     images: [
       "/images/Arts_Paint/3.jpg",
@@ -362,6 +347,39 @@ const arts = [
       "/images/Arts_Tetris/tetris_3.jpg",
     ],
     categoryId: 11,
+  },
+
+  {
+    id: 12,
+    title: "Balter Arts",
+    title_item: "Balter Arts",
+
+    description:
+      "During my time at Balter GmbH, I was actively involved in the creation of 3D models and product visualisations. My role was to develop high quality 3D models and visualisations that were used for brochures, catalogues, website and production. My work contributed to improving the visual presentation of the company's products and was an important element in its marketing and production efforts.",
+
+    Year: "Year: 2015-2020",
+    image: "/images/Arts_Balter/kartinka dom2.jpg",
+    images: [
+      "/images/Arts_Balter/KP5_View 1 2.jpg",
+      "/images/Arts_Balter/KP5_View 3 2.jpg",
+      "/images/Arts_Balter/kartinka dom2.jpg",
+      "/images/Arts_Balter/kamera 2B 300dpi.jpg",
+      "/images/Arts_Balter/kamera 2W 300dpi.jpg",
+      "/images/Arts_Balter/kamera 10 v2.jpg",
+      "/images/Arts_Balter/kamera 5 n4.jpg",
+      "/images/Arts_Balter/kamera6.jpg",
+      "/images/Arts_Balter/kamera7.jpg",
+      "/images/Arts_Balter/stoika 2.jpg",
+      "/images/Arts_Balter/TS2_03.jpg",
+      "/images/Arts_Balter/View_02.jpg",
+      "/images/Arts_Balter/zapravka 8.jpg",
+      "/images/Arts_Balter/zapravka.jpg",
+      "/images/Arts_Balter/TSS.jpg",
+      "/images/Arts_Balter/TSS_2.jpg",
+      "/images/Arts_Balter/Stend 3_View 1.jpg",
+    ],
+
+    categoryId: 12,
   },
 ];
 
