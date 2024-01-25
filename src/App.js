@@ -14,6 +14,7 @@ import ItProjects from "./pages/ItProjectsPaje/ItProjects";
 
 import ArtsPages from "./pages/ArtsPages/ArtsPages";
 import ArtItemPage from "./pages/ArtItemPage/ArtItemPage";
+import StartPage from "./pages/StartPage/StartPage";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -88,6 +89,7 @@ function App() {
         <ScrollToTop />
       </div>
       <Routes>
+        <Route path="/start" element={<StartPage />} />
         <Route path="/portfolio" element={<HomePage />} />
         {/* <Route exact path="/" element={<ProjectsList />} /> */}
         <Route path="/project/:projectId" element={<ProjectPage />} />

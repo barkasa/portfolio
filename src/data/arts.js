@@ -78,7 +78,7 @@ const arts = [
     title: "Blender Arts",
     title_item: "Blender Arts",
     description: "Blender Arts, YouTube-Tutorials",
-    Year: "Year: 2023",
+    Year: "Year: 2023-2024",
 
     image: "/images/Arts_Blender/grib.jpg",
     images: [
@@ -128,9 +128,11 @@ const arts = [
     description:
       "I have had a lifelong passion for drawing and have taken part in various painting competitions, which has made painting an integral part of my life. Recently I was lucky enough to try my hand at painting on large formats using acrylics, gold leaf, silver and bronze. This experience opened up new horizons for me and allowed me to create works of art that I proudly gifted to my friends. My paintings now adorn their homes and I feel a special satisfaction knowing that my creative endeavours bring joy and inspiration to those around me.",
 
-    Year: "Year: 2021-2023",
+    Year: "Year: 2021-2024",
     image: "/images/Arts_Paint/3.jpg",
     images: [
+      "/images/Arts_Paint/man and woman.jpg",
+      "/images/Arts_Paint/triptych No. 3.jpg",
       "/images/Arts_Paint/3.jpg",
       "/images/Arts_Paint/3_2.jpg",
       "/images/Arts_Paint/friends.jpg",

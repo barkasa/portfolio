@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: "B. A. Moscow 2023",
-    title_item: "Design Project - Butvinova A.",
+    title_item: "Design Project - B. A.",
     description:
       "Elegant interior in a modern classic style. It is a joint work with the architect of the project, on the design and visualization of the interiors, selection of furniture and finishing materials.\n" +
       "Our images bring the details of this space to life: pastel shades, warm colors and subtle colors create an atmosphere of calm and cosiness. Moldings on the ceiling and walls, angled herringbone parquet flooring and contrasting elements add to the elegance of the interior.\n" +
@@ -28,7 +28,7 @@ const projects = [
   {
     id: 2,
     title: "Dukhanino-2 Moscow region 2023",
-    title_item: "Design Project - Olga.",
+    title_item: "Design Project - O.",
     description:
       "Welcome to the wooden house in Dukhanino, surrounded by fir and pine trees, a true harmony with nature. This interior uses eco-friendly materials, creating an atmosphere of naturalness and cosiness.\n" +
       "The interior is decorated with warm pastel tones, including grassy, beige and red tones. The walls are finished in wood, which gives the room a natural and organic look. The furniture is predominantly in shades of reddish and beige, creating a harmonious combination with the natural surroundings.\n" +
@@ -181,13 +181,13 @@ const projects = [
   {
     id: 7,
     title: "Design project laminated timber house, Moscow region, 2020",
-    title_item: "Home design project -  Radonezh E.",
+    title_item: "Home design project -  R. E.",
     description: `We present a sophisticated and stylish design for a two-storey laminated timber house, combining redwood (walnut) with copper panelling and deep green. Light black threads of light fixtures, like spider-like accents, flow through the double-height space, imbuing the house with graphics and light. The second light, enclosed by a glass railing, creates a sense of overview and cosiness, where you can sit in an armchair and read a book.
 
     Large format graphic pictures compliment the interior despite their imposing size, as elements of continuity in the lighting, furniture, and textures. They give rooms extra aesthetic accent and visual interest.
 
     Every corner of the house shows style and good taste. The combination of sustainable materials and modern design elements creates a special harmony, which gives the interior a cosy and elegant feel. Every detail and the chosen materials contribute to the beautiful look and feel of this home.`,
-    Location: "Location: Moscow region,  Radonezh E.",
+    Location: "Location: Moscow region",
     Area: "Area: 426,64qm",
     Year: "Year: 2020",
     image: "/images/Project_7/project_7_list.jpg",
@@ -218,7 +218,7 @@ const projects = [
     The flat is located in the centre of Moscow and has a spacious view from the window. It has achieved elegance of style, where gold elements, some luxury and cosiness are perfectly combined. This flat is designed for a young and attractive couple who appreciate beauty and unique design.
     
     The whole project reflects a dedication to quality and detail, and is a great example of working together. I am proud of this project and hope it will be a source of inspiration for future works.`,
-    Location: "Location: Moscow,  V.D.",
+    Location: "Location: Moscow",
     Area: "Area: 178,35qm",
     Year: "Year: 2013",
     image: "/images/Project_8/project_8_list.jpg",
