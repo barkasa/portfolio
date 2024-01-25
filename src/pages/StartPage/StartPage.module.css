@@ -1,0 +1,107 @@
+.wrapper_app {
+  margin: 0 auto;
+  max-width: 1450px;
+  padding: 0 20px;
+  text-align: center;
+}
+.greeting {
+  background-image: url("../../assets/gray-painted-background.jpg");
+  background-size: cover; /* чтобы изображение занимало всю доступную область */
+  /* background-position: center;  */
+  color: #ffffff; /* цвет текста, чтобы он хорошо читался на фоне */
+  margin: 100px 0 100px 0;
+  padding: 10px 0px 0px 10px;
+  /* text-align: left; */
+}
+.greeting_wrapp {
+  display: flex;
+
+  align-items: center;
+  justify-content: right;
+}
+.greeting_name_wrapp {
+  margin: 0 auto;
+}
+.greeting_name {
+  display: flex;
+}
+.greeting_name_wite {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.greeting_name_black {
+  color: #000000;
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+}
+.greeting_name_foto img {
+  display: flex;
+  max-width: 300px;
+  height: auto;
+}
+.greeting_description {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.description {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 50px;
+}
+.button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.nav_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #808080;
+}
+.scroll_doun {
+  cursor: pointer;
+  font-size: 36px;
+  color: #221616;
+  margin: 20px 0 100px 0;
+}
+.scroll_doun:hover {
+  color: rgb(84, 84, 104);
+}
+
+@media (max-width: 920px) {
+  .greeting_wrapp {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 600px) {
+  .greeting_name_wite {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .greeting_name_black {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}

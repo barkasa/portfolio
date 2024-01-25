@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import s from "./AboutPage.module.css";
 import { FaArrowCircleDown } from "react-icons/fa";
-import avatar from "../../assets/avatar.jpg";
+import avatar from "../../assets/i5.png";
 import gostinaya from "../../assets/gostinaya.png";
 
 export default function AboutPage() {
@@ -46,8 +46,8 @@ export default function AboutPage() {
             <br />I have quite a lot of experience in design, graphics,
             rendering and modelling 3D models and interiors and exteriors.
             Collaborative experience with fellow architects and designers.
-            <br /> I work in programs such as 3D max + (Corona, V-ray), Adobe
-            Photoshop, Corel-Draw.
+            <br /> I work in programs such as 3D max + (Corona, V-ray), Blender,
+            Adobe Photoshop, Corel-Draw.
             <br /> In 2006 I graduated from the architectural university "KRSU"
             in Kyrgyzstan, Bishkek.
             <br /> - After graduation I worked as an interior designer in a
@@ -86,7 +86,7 @@ export default function AboutPage() {
             href="https://drive.google.com/file/d/13mD-71BJkN4KVFm1gaZSD9sz1FPupgjH/view?usp=sharing"
             download
           >
-            Lebenslauf
+            CV/Resume
           </a>
         </button>
 
@@ -95,7 +95,7 @@ export default function AboutPage() {
             href="https://drive.google.com/file/d/1MkH9vqNDxN_VDVw-Lgsgfc6tPQ0suozw/view?usp=sharing"
             download
           >
-            Bewerbung
+            Application
           </a>
         </button>
         <button className={s.download_button}>
