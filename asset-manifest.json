@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f471dbd.css",
-    "main.js": "/portfolio/static/js/main.ef7190bc.js",
-    "static/media/gray-painted-background.jpg": "/portfolio/static/media/gray-painted-background.58d79f6fa7874a9ea6a4.jpg",
+    "main.css": "/portfolio/static/css/main.0e44f518.css",
+    "main.js": "/portfolio/static/js/main.caf1191d.js",
+    "static/media/gray-painted-background.jpg": "/portfolio/static/media/gray-painted-background.787c9acb41f53b02908a.jpg",
+    "static/media/gray-painted-background_light.jpg": "/portfolio/static/media/gray-painted-background_light.f61b4f85a46dc9726a96.jpg",
     "static/media/i5.png": "/portfolio/static/media/i5.4db2d8d220cc297a6631.png",
     "static/media/i4.png": "/portfolio/static/media/i4.389e0773f07c882017da.png",
     "static/media/404.png": "/portfolio/static/media/404.8b4a09d5ee0a57e55c9e.png",
     "static/media/gostinaya.png": "/portfolio/static/media/gostinaya.b808eb9c4572a9cc482f.png",
+    "static/media/gray-painted-background_beje.jpg": "/portfolio/static/media/gray-painted-background_beje.7df0cb9aedade1596b79.jpg",
     "static/media/success.png": "/portfolio/static/media/success.cf61cdce66cb8fda08b5.png",
     "static/media/artstation.png": "/portfolio/static/media/artstation.c2ce621ebe8f68f78552.png",
     "static/media/logo2.png": "/portfolio/static/media/logo2.090bf93911565d0743ab.png",
     "index.html": "/portfolio/index.html",
-    "main.1f471dbd.css.map": "/portfolio/static/css/main.1f471dbd.css.map",
-    "main.ef7190bc.js.map": "/portfolio/static/js/main.ef7190bc.js.map"
+    "main.0e44f518.css.map": "/portfolio/static/css/main.0e44f518.css.map",
+    "main.caf1191d.js.map": "/portfolio/static/js/main.caf1191d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f471dbd.css",
-    "static/js/main.ef7190bc.js"
+    "static/css/main.0e44f518.css",
+    "static/js/main.caf1191d.js"
   ]
 }
