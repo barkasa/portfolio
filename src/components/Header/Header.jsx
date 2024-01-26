@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <div className={s.header}>
       <div className={s.logo_wrapper}>
-        <NavLink className={s.logo_link} to="/start">
+        <NavLink className={s.logo_link} to="/portfolio">
           <img src={logo2} alt="logo" />
         </NavLink>
       </div>
@@ -46,10 +46,10 @@ export default function Header() {
           </>
         ) : (
           <>
-            <NavLink className={s.nav_link} to="/start">
+            <NavLink className={s.nav_link} to="/portfolio">
               Start
             </NavLink>
-            <NavLink className={s.nav_link} to="/portfolio">
+            <NavLink className={s.nav_link} to="/designe">
               Interiors
             </NavLink>
             {/* <NavLink className={s.nav_link} to="/itProjects">

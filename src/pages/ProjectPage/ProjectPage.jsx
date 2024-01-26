@@ -107,7 +107,7 @@ const ProjectPage = () => {
             <MdSkipPrevious />
           </div>
           <div title="Gallery">
-            <NavLink className={s.nav_link} to="/portfolio">
+            <NavLink className={s.nav_link} to="/designe">
               <TfiGallery className={s.back_to_Gallery} />
             </NavLink>
           </div>
