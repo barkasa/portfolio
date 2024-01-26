@@ -47,16 +47,36 @@
   font-size: 24px;
   margin-top: 10px;
   margin-bottom: 20px;
-  color: black;
+  color: #ffffff;
 }
+.description_baner {
+  background-image: url("../../assets/gray-painted-background_beje.jpg");
+  background-size: cover;
 
+  margin: 100px 0 100px 0;
+  padding: 50px 50px 30px 50px;
+  display: flex;
+}
 .description {
   font-size: 24px;
+  /* font-weight: bold; */
   color: black;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
+.description_inBaner {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+.description_link {
+  /* font-size: 24px;
+  font-weight: bold;
+  color: black; */
+  margin-bottom: 20px;
+}
+
 .button {
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
   padding: 10px 20px;
   background-color: #000000;
 
@@ -64,6 +84,7 @@
   cursor: pointer;
 
   font-size: 16px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 .nav_link {
@@ -88,6 +109,9 @@
   .greeting_wrapp {
     flex-direction: column;
     align-items: flex-end;
+  }
+  .description_baner {
+    display: block;
   }
 }
 @media (max-width: 600px) {

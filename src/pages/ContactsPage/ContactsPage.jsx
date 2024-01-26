@@ -44,7 +44,7 @@ const ContactsPage = () => {
   };
 
   const handleGoBack = () => {
-    navigate("/start");
+    navigate("/designe");
   };
 
   return (

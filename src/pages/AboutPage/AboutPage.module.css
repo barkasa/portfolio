@@ -37,10 +37,17 @@
   display: flex;
 }
 .block_about_content {
+  background-image: url("../../assets/gray-painted-background_light.jpg");
+  background-size: cover;
+
   display: flex;
   flex-direction: row;
+  color: #000000;
+  font-weight: bold;
+  align-items: end;
 }
 .block_about p {
+  margin: 50px 50px 50px 50px;
   font-size: 17px;
   text-align: justify;
   line-height: 1.6;
@@ -49,22 +56,23 @@
 .block_about img {
   width: auto;
   height: 600px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 .download_wrapper {
   padding: 100px 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  /* justify-content: space-around; */
 }
 .download_button {
-  margin: 0 10px;
+  margin: 0 20px;
   padding: 10px 20px;
   background-color: #000000;
 
   border: none;
   cursor: pointer;
-
+  border-radius: 10px;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }

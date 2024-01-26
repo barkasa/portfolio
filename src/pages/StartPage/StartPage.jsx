@@ -40,30 +40,32 @@ export default function StartPage() {
           creative spaces, small forms, arts and drawing.
         </p>
 
-        <div className={s.description}>
-          <p>
-            You can see my works in the following sections:
+        <div className={s.description_baner}>
+          <div className={s.description_link}>
+            <p className={s.description_inBaner}>
+              You can see my works in the following sections:
+              <button className={s.button}>
+                <NavLink className={s.nav_link} to="/portfolio">
+                  Interios
+                </NavLink>
+              </button>
+              or
+              <button className={s.button}>
+                <NavLink className={s.nav_link} to="/arts">
+                  Arts
+                </NavLink>
+              </button>
+            </p>
+          </div>
+          <p className={s.description_inBaner}>
+            If you want to know more about me, visit the section:
             <button className={s.button}>
-              <NavLink className={s.nav_link} to="/portfolio">
-                Interios
-              </NavLink>
-            </button>
-            or
-            <button className={s.button}>
-              <NavLink className={s.nav_link} to="/arts">
-                Arts
+              <NavLink className={s.nav_link} to="/about">
+                About
               </NavLink>
             </button>
           </p>
         </div>
-        <p className={s.description}>
-          If you want to know more about me, visit the section:
-          <button className={s.button}>
-            <NavLink className={s.nav_link} to="/about">
-              About
-            </NavLink>
-          </button>
-        </p>
         <div className={s.description}>
           <p>
             If you have any questions or would like to discuss a possible

@@ -27,16 +27,24 @@ const ModalHeaderMenu = ({ isOpen, onClose }) => {
             activeclassname={s.active}
             onClick={handleLinkClick}
           >
-            Design
+            Start
           </NavLink>
           <NavLink
+            className={s.nav_link}
+            to="/designe"
+            activeclassname={s.active}
+            onClick={handleLinkClick}
+          >
+            Design
+          </NavLink>
+          {/* <NavLink
             className={s.nav_link}
             to="/itProjects"
             activeclassname={s.active}
             onClick={handleLinkClick}
           >
             It-projects
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className={s.nav_link}
             to="/arts"
