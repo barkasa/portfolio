@@ -45,7 +45,7 @@ export default function StartPage() {
             <p className={s.description_inBaner}>
               You can see my works in the following sections:
               <button className={s.button}>
-                <NavLink className={s.nav_link} to="/portfolio">
+                <NavLink className={s.nav_link} to="/designe">
                   Interios
                 </NavLink>
               </button>

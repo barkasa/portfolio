@@ -6,7 +6,7 @@
   font-weight: 600;
   /* background-color: rgb(123, 123, 153); */
   background-color: #826e88;
-  text-align: justify;
+  /* text-align: justify; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,12 +44,12 @@
   flex-direction: row;
   color: #000000;
   font-weight: bold;
-  align-items: end;
+  align-items: flex-end;
 }
 .block_about p {
   margin: 50px 50px 50px 50px;
   font-size: 17px;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 1.6;
   flex: 1; /* Распределение доступного пространства между элементами */
 }
