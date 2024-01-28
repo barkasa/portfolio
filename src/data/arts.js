@@ -133,6 +133,9 @@ const arts = [
     images: [
       "/images/Arts_Paint/man and woman.jpg",
       "/images/Arts_Paint/triptych No. 3.jpg",
+      "/images/Arts_Paint/triptych No. 3_2.jpg",
+      "/images/Arts_Paint/cats.jpg",
+      "/images/Arts_Paint/cats_2.jpg",
       "/images/Arts_Paint/3.jpg",
       "/images/Arts_Paint/3_2.jpg",
       "/images/Arts_Paint/friends.jpg",
@@ -146,7 +149,6 @@ const arts = [
       "/images/Arts_Paint/1.jpg",
       "/images/Arts_Paint/2.a.jpg",
       "/images/Arts_Paint/4.jpg",
-      "/images/Arts_Paint/cats.jpg",
     ],
     categoryId: 4,
   },
