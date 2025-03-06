@@ -108,7 +108,7 @@ export default function AboutPage() {
           </a>
         </button>
         <button className={s.download_button}>
-          <a href="https://3ddd.ru/users/morosow/models">View 3ddd models</a>
+          <a href="https://3dsky.org/users/morosow/models">View 3ddd models</a>
         </button>
       </div>
       <div className={`${s.banner} ${s.banner_down}`}>
