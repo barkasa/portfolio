@@ -83,6 +83,8 @@ const arts = [
     image: "/images/Arts_Blender/grib.jpg",
     images: [
       "/images/Arts_Blender/grib.jpg",
+      // "/images/Arts_Blender/grib.mp4",
+      "/video/grib.mp4",
       "/images/Arts_Blender/fabrik.gif",
       "/images/Arts_Blender/island.jpg",
       "/images/Arts_Blender/boat.jpg",
@@ -97,6 +99,7 @@ const arts = [
       "/images/Arts_Blender/Geist.jpg",
       "/images/Arts_Blender/pampkin.jpg",
       "/images/Arts_Blender/Grogo.jpg",
+      "/video/Grogo.mp4",
       "/images/Arts_Blender/radio.jpg",
       "/images/Arts_Blender/small world.jpg",
     ],
@@ -109,13 +112,18 @@ const arts = [
     title_item: "3DsMAX Arts",
 
     description:
-      "Training works from various lessons, which later turned into Art. An option when you go beyond the scope of this project and want more.",
+      "Training works from various lessons, which later turned into art. Sometimes, you go beyond the project's initial scope and strive for more. Additionally, I have included works from a 3D competition.",
 
     Year: "Year: 2023-2024",
     image: "/images/Arts_3DsMAX/snowBall_1.jpg",
     images: [
       "/images/Arts_3DsMAX/snowBall_1.jpg",
       "/images/Arts_3DsMAX/snowBall_2.jpg",
+      "/images/Arts_3DsMAX/flying castle_1.jpg",
+      "/images/Arts_3DsMAX/flying castle_2.jpg",
+      "/images/Arts_3DsMAX/flying castle_3.jpg",
+      "/images/Arts_3DsMAX/flying castle_4.jpg",
+      "/images/Arts_3DsMAX/flying castle_5.jpg",
     ],
     categoryId: 3,
   },
@@ -261,6 +269,7 @@ const arts = [
       "/images/Arts_Zeichnungen/antipode_2.jpg",
       "/images/Arts_Zeichnungen/cockroach.jpg",
       "/images/Arts_Zeichnungen/cow.jpg",
+      "/images/Arts_Zeichnungen/cow_2.jpg",
       "/images/Arts_Zeichnungen/echidna.jpg",
       "/images/Arts_Zeichnungen/flowers.jpg",
       "/images/Arts_Zeichnungen/flowers_2.jpg",
