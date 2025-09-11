@@ -1,3 +1,157 @@
+// import React, { useState, useCallback, useEffect } from "react";
+// import s from "./Header.module.css";
+// import { NavLink } from "react-router-dom";
+// import logo2 from "../../assets/logo2.png";
+// import Burger from "../Burger/Burger";
+// import ModalHeaderMenu from "../Modal/ModalHeaderMenu/ModalHeaderMenu";
+
+// export default function Header() {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+
+//   const handleMenuToggle = () => {
+//     setIsMenuOpen(!isMenuOpen);
+//   };
+
+//   const handleCloseModal = () => {
+//     setIsMenuOpen(false);
+//   };
+
+//   const handleResize = useCallback(() => {
+//     setIsMobile(window.innerWidth <= 810);
+//     if (window.innerWidth > 810) {
+//       handleCloseModal();
+//     }
+//   }, []);
+
+//   useEffect(() => {
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, [handleResize]);
+
+//   return (
+//     <div className={s.header}>
+//       <div className={s.logo_wrapper}>
+//         <NavLink className={s.logo_link} to="/portfolio">
+//           <img src={logo2} alt="logo" />
+//         </NavLink>
+//       </div>
+//       <div className={s.nav_wrapper}>
+//         {isMobile ? (
+//           <>
+//             <Burger onClick={handleMenuToggle} />
+//             <ModalHeaderMenu isOpen={isMenuOpen} onClose={handleCloseModal} />
+//           </>
+//         ) : (
+//           <>
+//             <NavLink className={s.nav_link} to="/portfolio">
+//               Start
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/designe">
+//               Interiors
+//             </NavLink>
+//             {/* <NavLink className={s.nav_link} to="/itProjects">
+//               It-projects
+//             </NavLink> */}
+//             <NavLink className={s.nav_link} to="/arts">
+//               Arts
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/about">
+//               About
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/contacts">
+//               Contacts
+//             </NavLink>
+//           </>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+// ....................................
+
+// import React, { useState, useCallback, useEffect } from "react";
+// import s from "./Header.module.css";
+// import { NavLink } from "react-router-dom";
+// import logo2 from "../../assets/logo2.png";
+// import Burger from "../Burger/Burger";
+// import ModalHeaderMenu from "../Modal/ModalHeaderMenu/ModalHeaderMenu";
+
+// export default function Header({ theme, setTheme }) {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+
+//   const handleMenuToggle = () => {
+//     setIsMenuOpen(!isMenuOpen);
+//   };
+
+//   const handleCloseModal = () => {
+//     setIsMenuOpen(false);
+//   };
+
+//   const handleResize = useCallback(() => {
+//     setIsMobile(window.innerWidth <= 810);
+//     if (window.innerWidth > 810) {
+//       handleCloseModal();
+//     }
+//   }, []);
+
+//   useEffect(() => {
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, [handleResize]);
+
+//   return (
+//     <div className={`${s.header} ${theme === "dark" ? s.dark : ""}`}>
+//       <div className={s.logo_wrapper}>
+//         <NavLink className={s.logo_link} to="/portfolio">
+//           <img src={logo2} alt="logo" />
+//         </NavLink>
+//       </div>
+//       <div className={s.nav_wrapper}>
+//         {isMobile ? (
+//           <>
+//             <Burger onClick={handleMenuToggle} />
+//             <ModalHeaderMenu isOpen={isMenuOpen} onClose={handleCloseModal} />
+//           </>
+//         ) : (
+//           <>
+//             <NavLink className={s.nav_link} to="/portfolio">
+//               Start
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/designe">
+//               Interiors
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/arts">
+//               Arts
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/about">
+//               About
+//             </NavLink>
+//             <NavLink className={s.nav_link} to="/contacts">
+//               Contacts
+//             </NavLink>
+//             <button
+//               className={s.theme_button}
+//               onClick={() => setTheme("light")}
+//             >
+//               ☀ Light
+//             </button>
+//             <button className={s.theme_button} onClick={() => setTheme("dark")}>
+//               🌙 Dark
+//             </button>
+//           </>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+// ..............................
+
 import React, { useState, useCallback, useEffect } from "react";
 import s from "./Header.module.css";
 import { NavLink } from "react-router-dom";
@@ -5,7 +159,7 @@ import logo2 from "../../assets/logo2.png";
 import Burger from "../Burger/Burger";
 import ModalHeaderMenu from "../Modal/ModalHeaderMenu/ModalHeaderMenu";
 
-export default function Header() {
+export default function Header({ theme, setTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
 
@@ -32,7 +186,7 @@ export default function Header() {
   }, [handleResize]);
 
   return (
-    <div className={s.header}>
+    <div className={`${s.header} ${theme === "dark" ? s.dark : ""}`}>
       <div className={s.logo_wrapper}>
         <NavLink className={s.logo_link} to="/portfolio">
           <img src={logo2} alt="logo" />
@@ -52,9 +206,6 @@ export default function Header() {
             <NavLink className={s.nav_link} to="/designe">
               Interiors
             </NavLink>
-            {/* <NavLink className={s.nav_link} to="/itProjects">
-              It-projects
-            </NavLink> */}
             <NavLink className={s.nav_link} to="/arts">
               Arts
             </NavLink>
@@ -64,6 +215,12 @@ export default function Header() {
             <NavLink className={s.nav_link} to="/contacts">
               Contacts
             </NavLink>
+            <button
+              className={s.theme_button}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? "☀ Light" : "🌙 Dark"}
+            </button>
           </>
         )}
       </div>

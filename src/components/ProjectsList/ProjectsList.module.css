@@ -69,6 +69,8 @@
   }
 } */
 
+/* ............................................................................................ */
+
 .projectsList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,7 +88,6 @@
   background-color: #fff;
 }
 
-/* Статичное изображение */
 .projectImage {
   width: 100%;
   height: auto;
@@ -99,7 +100,6 @@
   bottom: 0;
 }
 
-/* Видео */
 .projectVideo {
   width: 100%;
   height: auto;
@@ -110,50 +110,28 @@
   transition: opacity 0.3s, filter 0.3s;
 }
 
-/* Показываем видео при наведении */
 .visible {
   opacity: 2;
   filter: grayscale(0%);
 }
 
-/* Скрываем изображение при наведении */
 .hidden {
   opacity: 1;
 }
 
-/* Заголовок проекта */
-/* .projectTitle {
+.projectTitle {
   pointer-events: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10px;
+  left: 10px;
   opacity: 0;
   font-size: 18px;
   font-weight: bold;
-  transition: opacity 0.3s;
-  background-color: rgba(255, 255, 255, 0.466);
-  backdrop-filter: blur(50%);
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.466) 20%,
-    rgba(255, 255, 255, 0.466) 80%,
-    rgba(255, 255, 255, 0)
-  );
-} */
-.projectTitle {
-  pointer-events: none; /* Игнорирует наведение мыши */
-  position: absolute;
-  bottom: 10px; /* Отступ снизу */
-  left: 10px; /* Отступ слева */
-  opacity: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff; /* Цвет текста */
+  color: #fff;
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Затемнённый фон */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-  /* transition: opacity 0.3s; */
+
   transition: opacity 0.5s;
 }
 
@@ -163,9 +141,6 @@
 .projectItem:hover .projectTitle {
   animation: fadeOut 7s forwards;
 }
-/* .projectItem:hover .projectTitle {
-  opacity: 1;
-} */
 
 @keyframes fadeOut {
   0% {

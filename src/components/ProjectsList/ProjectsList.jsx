@@ -193,6 +193,8 @@
 //   );
 // }
 
+// ......................................................................................................................
+
 import React, { useState } from "react";
 import s from "./ProjectsList.module.css";
 import { Link } from "react-router-dom";
@@ -237,7 +239,7 @@ export default function ProjectsList({ projects }) {
                   e.target.currentTime = 0; // Сброс к началу
                 }}
                 onError={(e) => {
-                  console.error("Ошибка загрузки видео", e);
+                  console.error("Video upload error", e);
                 }}
               />
             ) : (
